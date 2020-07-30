@@ -2,15 +2,24 @@
   "name": "first-egg-example",
   "version": "1.0.0",
   "description": "first study egg example demo",
+  "homepage": "",
+  "author": "monkey01127<1400623471@qq.com>",
+  "contributors": [
+    {
+      "name": "sunlijuan",
+      "email": "1400623471@qq.com",
+      "url": "http://XXXXXXX"
+    }
+  ],
   "main": "index.js",
   "scripts": {
     "dev": "egg-bin dev",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "egg-bin test",
+    "cov": "egg-bin cov"
   },
   "keywords": [
     "egg"
   ],
-  "author": "sunlijuan",
   "license": "ISC",
   "dependencies": {
     "egg": "^2.26.1",
@@ -18,6 +27,7 @@
     "moment": "^2.27.0"
   },
   "devDependencies": {
-    "egg-bin": "^4.14.1"
+    "egg-bin": "^4.14.1",
+    "egg-mock": "^4.0.0"
   }
 }

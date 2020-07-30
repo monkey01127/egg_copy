@@ -20,7 +20,7 @@ class NewsController extends Controller {
   async list() {
     const ctx = this.ctx;
     const page = ctx.query.page || 1;
-    console.log('page =>', page);
+    console.log('page =>', page, ctx.isIOS, ctx.isAndroid);
     const newsList = await ctx.service.news.list(page);
     console.log('newsList =>', newsList);
     await ctx.render('news/list.tpl', { list: newsList });
