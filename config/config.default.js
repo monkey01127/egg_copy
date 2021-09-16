@@ -1,4 +1,4 @@
-exports.keys = "monkey01127";
+exports.keys = "monkey01127_copy";
 
 // 添加 view 配置
 exports.view = {
@@ -21,7 +21,8 @@ exports.news = {
 
 // add middleware robot
 exports.middleware = [
-  'robot'
+  'robot',
+  'test'
 ];
 // robot's configurations
 exports.robot = {
